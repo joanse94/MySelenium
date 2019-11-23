@@ -16,7 +16,7 @@ public class colorValidationUsingCssValue {
 		String cssValue = driver.findElement(By.cssSelector("aside.static-strip")).getCssValue("background-color");
 		System.out.println("The Css value of the tob bar : "+cssValue);
 		String expectedcssValue ="rgba(255, 255, 255, 0.2)"; 
-		if(cssValue == expectedcssValue) {
+		if(cssValue.equalsIgnoreCase(expectedcssValue)) {
 			System.out.println("The Color of the top header is matched with the css value ");
 		}
 		else {
