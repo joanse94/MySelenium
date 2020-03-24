@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class colorValidationUsingCssValue {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -20,10 +20,10 @@ public class colorValidationUsingCssValue {
 			System.out.println("The Color of the top header is matched with the css value ");
 		}
 		else {
-			System.out.println("Color of the top bar is not matched with css value");
+			System.out.println("VERIFICATION : Color of the top bar is not matched with css value");
 			System.out.println("Expected Css value : "+expectedcssValue + " Actual Css value : " +cssValue);
 		}
-		
+		Thread.sleep(3000);
 		driver.close();
 		
 	}
