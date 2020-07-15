@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PositiveLogInTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="PositiveLogInTest-WPr(failed)">
+    <parameter name="chromeProfile" value="ChromeProfile"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.loginpagetests.PositiveLogInTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="logInTest"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.loginpagetests.PositiveLogInTests -->
+    </classes>
+  </test> <!-- PositiveLogInTest-WPr(failed) -->
+</suite> <!-- Failed suite [PositiveLogInTestSuite] -->
