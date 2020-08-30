@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DropdownTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="DropdownTests-FF(failed)">
+    <parameter name="browser" value="firefoxheadless"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.dropdowntests.DropdownTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="optionTwoTest"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.dropdowntests.DropdownTest -->
+    </classes>
+  </test> <!-- DropdownTests-FF(failed) -->
+</suite> <!-- Failed suite [DropdownTestSuite] -->

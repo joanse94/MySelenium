@@ -38,7 +38,7 @@ public class BrowserDriverFactory {
 			System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
 			driver.set(new FirefoxDriver());
 			break;
-			
+
 		case "chromeheadless":
 			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 			ChromeOptions chromeOptions = new ChromeOptions();
@@ -59,7 +59,6 @@ public class BrowserDriverFactory {
 			System.setProperty("phantomjs.binary.path", "src/main/resources/phantomjs.exe");
 			driver.set(new PhantomJSDriver());
 			break;
-
 
 		case "htmlunit":
 			driver.set(new HtmlUnitDriver());

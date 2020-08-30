@@ -5,7 +5,9 @@
     <classes>
       <class name="com.herokuapp.theinternet.alertstests.AlertsTests">
         <methods>
+          <include name="jsDismissTest"/>
           <include name="setUp"/>
+          <include name="jsAlertTest"/>
           <include name="tearDown"/>
           <include name="jsPromptTest"/>
         </methods>
